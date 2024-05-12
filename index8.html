@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cusstom Service</title>
+</head>
+<body>
+    <h1>Example of Custom Service</h1>
+    <div ng-app="app8">
+        <div ng-controller="myController">
+            <input type="number" placeholder="value 1" ng-model="num1"/>
+            <input type="number" placeholder="value 2" ng-model="num2"/>
+            <button ng-click="sum()">Sum</button>
+            <button ng-click="difference()">difference</button>
+            <button ng-click="product()">product</button>
+            <button ng-click="quotitent()">quotient</button>
+            <div>{{value}}</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/app8.js"></script>
+</body>
+</html>
