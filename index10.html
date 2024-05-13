@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Using Built in filters</title>
+</head>
+<body>
+ 
+    <div ng-app="app10">
+        <div ng-controller="myController">
+            <h1>1. Using Filter Built-in</h1>
+            <input type="text" ng-model="searchText"/>
+            <div ng-repeat="name in names| filter:searchText">
+                {{name}}
+            </div>
+            <h1>2. Using Price: Built-in</h1>
+            <h2>Price in USD:</h2>
+            <p>{{ price1 | currency }}</p>
+            <h2>Price in Ethiopian Birr (ETB):</h2>
+            <p>{{ price2 | currency:'ETB' }}</p>
+            <h3>Date:</h3>
+            <p>{{ currentDate | date:'yyyy-MM-dd' }}</p>
+            <p>{{value2 | lowercase}}</p>
+            <p>{{value2 | uppercase}}</p>
+            <div ng-repeat="name in names| orderBy">
+                {{name}}
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app10.js"></script>
+</body>
+</html>
