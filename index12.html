@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,inital-scale=1"/>
+        <title>Simple Route (ng-route) </title>
+    </head>
+    <body>
+        <div ng-app="app12">
+            <nav>
+                <a href="#!about">About</a>
+                <a href="#!contact">Contact</a>
+            </nav>
+            <div ng-view>
+            </div>
+        </div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+        <script src="app12.js"></script>
+    </body>
+</html>
