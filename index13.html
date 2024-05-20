@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Route Parameter</title>
+</head>
+<body>
+    <div ng-app="app13">
+        <div ng-controller="mainController">
+            {{a}}, {{b}}
+            <input type="text" placeholder="a" ng-model="a" />
+            <input type="text" placeholder="b" ng-model="b" />
+            <button ng-click="doSum()">Calculate</button>
+        </div>
+        <div ng-view></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <script src="app13.js"></script>
+</body>
+</html>
